@@ -30,5 +30,5 @@ class Menu:
         return 'Please try again'
 
 
-menu_object = Menu()
-menu_object.display_menu('starters')
+# menu_object = Menu()
+# menu_object.display_menu('starters')

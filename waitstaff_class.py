@@ -8,15 +8,13 @@ class Waitstaff(Menu):
     
     # this function prompts the user for the items they would like to order 
     def get_order(self):
-
-        order_items = []
+        self.order_items = []
         while True:
-            order_item = input('What would you like to order? please enter "nothing" if you have completed your order.').lower()
-            if order_item == 'nothing':
-                return order_items
+            self.item = ('What would you like to order? enter "nothing" if you want nothing.')
+            if item == 'nothing':
+                return self.order_items
             else:
-                order_items.append(order_item)
-            return order_items
+                self.order_items.append(self.item)
 
     def print_order(self, orders_list):
-        print(f'Thank you for ordering the {" ".join(items for items in orders_list)}.')
+        print(f'Thank you for ordering the {", ".join(items for items in self.orders_list)}. Your order will arrive shortly.')
